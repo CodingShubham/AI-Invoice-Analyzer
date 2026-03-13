@@ -33,7 +33,6 @@ let handlebutton=async()=>{
 
       const res=await axios.post("http://localhost:3000/register",{firstName:firstName, lastName:lastName, emailId:email, passWord:password },{withCredentials: true})
       console.log(res.data);
-       navigate("/dashboard")
   }
 
   }
